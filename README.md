@@ -1,4 +1,5 @@
 # poke-web
+<<<<<<< HEAD
 
 ## Project setup
 ```
@@ -22,3 +23,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+A poke-web where you can see the info about some pokemons
+>>>>>>> d07af8e8722745ce95bdbc8e3759609c8a24f914
