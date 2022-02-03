@@ -1,10 +1,11 @@
 <template>
   <main>
     <px-header />
-    <div class="h-96"></div>
+
+    <router-view class="container px-5 sm:px-20 py-20 flex justify-center" />
+
     <px-footer />
   </main>
-  
 </template>
 
 <script>
@@ -16,7 +17,6 @@ export default {
   components: { PxHeader, PxFooter },
 };
 </script>
-
 
 <style>
 #app {
