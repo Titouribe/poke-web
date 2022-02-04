@@ -19,7 +19,7 @@ export default {
   },
 
   created() {
-    api.getPokemon().then((pokemon) => (this.pokemons = pokemon));
+    api.getPokemons().then((pokemon) => (this.pokemons = pokemon));
   },
 };
 </script>

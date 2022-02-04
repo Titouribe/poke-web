@@ -5,10 +5,15 @@
       v-for="p in pokemons"
       :key="p.name"
     >
-      <img src="https://img.icons8.com/color/48/000000/pokeball-2.png" />
-      <h2 class="ml-4 text-center font-bold">
-        {{ p.name }}
-      </h2>
+      <router-link
+        class="flex flex-row items-center"
+        :to="{ name: 'pokemon-detail', params: { name: p.name } }"
+      >
+        <img src="https://img.icons8.com/color/48/000000/pokeball-2.png" />
+        <h2 class="ml-4 text-center font-bold">
+          {{ p.name }}
+        </h2>
+      </router-link>
     </div>
   </div>
 </template>

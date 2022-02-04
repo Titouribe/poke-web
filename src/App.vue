@@ -1,5 +1,5 @@
 <template>
-  <main class="w-screen bg-blue-200">
+  <main class="w-screen bg-red-100">
     <px-header />
 
     <router-view class="w-screen h-auto flex" />
