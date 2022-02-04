@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen flex flex-col justify-center items-center">
+  <div class="h-auto flex flex-col justify-center items-center">
     <div
       class="h-auto w-56 p-8 min-h-max min-w-max bg-red-400 border-black border-2 m-10 inline-block text-center items-center flex-col rounded-3xl transition transition-all duration-500 ease-in-out hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110 hover:shadow-xl"
     >

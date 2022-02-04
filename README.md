@@ -1,6 +1,8 @@
 # poke-web
 <<<<<<< HEAD
 
+To run this project you have to clone in your machine, after thar in the command terminal you have to run "npm run serve".
+
 ## Project setup
 ```
 npm install
