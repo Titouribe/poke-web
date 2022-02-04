@@ -1,9 +1,12 @@
 <template>
-  <div class="flex flex-wrap items-center justify-center h-screen w-screen">
-    <div v-for="p in pokemons" :key="p.name">
-      <h2
-        class="text-center text-white cursor-pointer bg-gray-900 w-24 h-12 m-6 p-2 rounded-full transition transition-all duration-500 ease-in-out hover:bg-gray-600 transform hover:-translate-y-1 hover:scale-110"
-      >
+  <div class="p-24 flex flex-wrap items-center justify-center h-auto w-screen">
+    <div
+      class="w-44 min-w-max h-16 p-4 m-6 flex items-center text-center text-white cursor-pointer bg-gray-900 rounded-full transition transition-all duration-500 ease-in-out hover:bg-gray-600 transform hover:-translate-y-1 hover:scale-110 hover:shadow-xl"
+      v-for="p in pokemons"
+      :key="p.name"
+    >
+      <img src="https://img.icons8.com/color/48/000000/pokeball-2.png" />
+      <h2 class="ml-4 text-center font-bold">
         {{ p.name }}
       </h2>
     </div>

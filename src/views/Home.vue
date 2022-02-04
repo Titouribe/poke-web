@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-full">
+  <div class="w-full h-auto">
     <px-pokemon :pokemons="pokemons" />
   </div>
 </template>

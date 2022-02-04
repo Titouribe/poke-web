@@ -2,9 +2,9 @@
   <main class="w-screen bg-blue-200">
     <px-header />
 
-    <router-view class="container h-4/5 w-screen flex" />
+    <router-view class="w-screen h-auto flex" />
 
-    <px-footer />
+    <px-footer class="w-screen" />
   </main>
 </template>
 
