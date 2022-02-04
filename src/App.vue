@@ -2,7 +2,7 @@
   <main class="w-screen bg-blue-200">
     <px-header />
 
-    <router-view class="container px-5 sm:px-20 py-20 flex justify-center " />
+    <router-view class="container h-4/5 w-screen flex" />
 
     <px-footer />
   </main>

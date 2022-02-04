@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-col items-center text-center">
+  <div class="flex-col justify-center items-center text-center h-screen">
     <h1 class="text-red-600 text-6xl">Poke Web v1.0</h1>
     <p class="text-red-500 text-xl text-center">
       Proyect to show an aliatory Pokemon from poke API

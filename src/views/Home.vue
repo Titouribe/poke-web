@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full">
+  <div class="w-full h-full">
     <px-pokemon :pokemons="pokemons" />
   </div>
 </template>
@@ -12,14 +12,14 @@ export default {
   name: "Home",
 
   components: { PxPokemon },
-  data(){
-    return{
-      pokemons: []
-    }
+  data() {
+    return {
+      pokemons: [],
+    };
   },
 
-  created(){
-    api.getPokemon().then(pokemon => this.pokemons = pokemon)
-  }
+  created() {
+    api.getPokemon().then((pokemon) => (this.pokemons = pokemon));
+  },
 };
 </script>
