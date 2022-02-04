@@ -4,7 +4,7 @@
       <nav class="flex items-center justify-between flex-row bg-gray-900 p-6">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
           <router-link :to="{ name: 'home' }"
-            class="font-semibold text-xl tracking-tight flex items-center justify-between"
+            class="font-semibold text-xl tracking-tight flex items-center justify-between transition transition-all duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
             ><img
               class="mr-6"
               src="https://img.icons8.com/color/48/000000/open-pokeball--v2.png"
@@ -15,7 +15,7 @@
         <div
           class="hidden sm:block w-full blok flex-grow lg:flex lg:items-center lg:wauto"
         >
-        <router-link class="font-semibold text-xl tracking-tight flex items-center justify-between text-white" :to="{ name: 'about' }">About</router-link>
+        <router-link class="font-semibold text-xl tracking-tight flex items-center justify-between text-white transition transition-all duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" :to="{ name: 'about' }">About</router-link>
           <div class="text-sm lg:flex-grow"></div>
         </div>
       </nav>
