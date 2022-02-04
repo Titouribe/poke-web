@@ -44,7 +44,7 @@
       </div>
     </div>
               <router-link :to="{ name: 'home' }"
-            class="w-auto p-4 flex justify-between items-center text-white cursor-pointer bg-gray-900 rounded-full transition transition-all duration-500 ease-in-out hover:bg-gray-600 transform hover:-translate-y-1 hover:scale-110 hover:shadow-xl"
+            class="w-auto p-4 flex justify-between items-center text-white cursor-pointer bg-gray-900 rounded-full transition transition-all duration-500 ease-in-out hover:bg-gray-600 transform hover:-translate-y-1 hover:scale-110 hover:shadow-xl mb-2"
             ><img
               class="mr-4"
               src="https://img.icons8.com/color/48/000000/open-pokeball--v2.png"
