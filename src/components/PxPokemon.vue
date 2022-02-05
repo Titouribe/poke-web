@@ -1,8 +1,15 @@
 <template>
   <div class="p-24 flex flex-wrap items-center justify-center h-auto w-screen">
+    <input
+            class="bg-gray-900 text-white rounded-2xl focus:outline-none border-b border-white py-2 px-4 block w-full appearance-none leading-normal"
+            id="filter"
+            placeholder="Enter pokemon name..."
+            type="text"
+            v-model="filter"
+          />
     <div
       class="w-44 min-w-max h-16 p-4 m-6 flex items-center text-center text-white cursor-pointer bg-gray-900 rounded-full transition transition-all duration-500 ease-in-out hover:bg-gray-600 transform hover:-translate-y-1 hover:scale-110 hover:shadow-xl"
-      v-for="p in pokemons"
+      v-for="p in filteredPokemons"
       :key="p.name"
     >
       <router-link
@@ -18,14 +25,28 @@
   </div>
 </template>
 <script>
+
 export default {
   name: "PxPokemon",
+
+  data(){
+    return {
+      filter: "",
+    }
+  },
 
   props: {
     pokemons: {
       type: Array,
       default: () => [],
     },
+  },
+
+  computed: {
+    filteredPokemons(){
+      if(!this.filter){ return this.pokemons}
+      return this.pokemons.filter(p => p.name.toLowerCase().includes(this.filter.toLowerCase()))
+    }
   },
 };
 </script>

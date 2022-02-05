@@ -2,7 +2,7 @@
   <main class="w-screen bg-red-100">
     <px-header />
 
-    <router-view class="w-screen h-auto flex" />
+    <router-view class="w-screen h-auto min-h-screen flex" />
 
     <px-footer class="w-screen" />
   </main>
